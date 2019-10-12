@@ -22,10 +22,9 @@ public class MergeSort implements SortInterface {
     }
 
     @Override
-    public void addWordsToList(String[] words) {
-        for(String word: words){
-            this.words.add(word);
-        }
+    public void addWordsToList(String word) {
+        this.words.add(word);
+
     }
 
     @Override
@@ -46,15 +45,10 @@ public class MergeSort implements SortInterface {
     //the merge procedures assumes that the two temporary lists it operates on, are sorted
     //it then merges the two into the original one
     private void merge(ArrayList<String> words, int beg, int mid, int end){
-        //int n1 = mid - beg + 1; // setting the size of the left arraylist
-        //int n2 = end - mid; //setting the size of the right array list
 
         //creating the left and right temporary sublists
         ArrayList<String> leftList = new ArrayList<>(words.subList(beg,mid + 1));
         ArrayList<String> rightList = new ArrayList<>(words.subList(mid + 1,end + 1));
-
-        //System.out.println("left: "+leftList.toString());
-        //System.out.println("right: "+rightList.toString());
 
         int i = 0; //counter to keep track of leftList
         int j = 0; //counter to keep track of rightList
@@ -104,7 +98,7 @@ public class MergeSort implements SortInterface {
     public static void main(String[] args) {
         MergeSort sort = new MergeSort();
         String[] check = {"dc","b","dca","xxx","a","aa"};
-        sort.addWordsToList(check);
+       // sort.addWordsToList(check);
         sort.sort();
         sort.display();
     }

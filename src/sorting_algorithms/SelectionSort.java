@@ -23,10 +23,8 @@ public class SelectionSort implements SortInterface{
     }
 
     @Override
-    public void addWordsToList(String[] words) {
-        for(String word: words){
-            this.words.add(word);
-        }
+    public void addWordsToList(String word) {
+        this.words.add(word);
     }
 
     //The selection sort procedure works by repeatedly finding the smallest element in the list
@@ -57,7 +55,7 @@ public class SelectionSort implements SortInterface{
     public static void main(String[] args) {
         SelectionSort sort = new SelectionSort();
         String[] check = {"dc","b","dca","xxx","a","aa"};
-        sort.addWordsToList(check);
+        //sort.addWordsToList(check);
         sort.sort();
         sort.display();
 

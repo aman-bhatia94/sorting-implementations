@@ -23,10 +23,10 @@ public class InsertionSort implements SortInterface {
     }
 
     @Override
-    public void addWordsToList(String[] words) {
-        for(String word: words){
-            this.words.add(word);
-        }
+    public void addWordsToList(String word) {
+
+        this.words.add(word);
+
     }
 
     //key is the string that needs to be put into its correct position
@@ -55,7 +55,7 @@ public class InsertionSort implements SortInterface {
     public static void main(String[] args) {
         InsertionSort sort = new InsertionSort();
         String[] check = {"dc","b","dca","xxx","a","aa"};
-        sort.addWordsToList(check);
+        //sort.addWordsToList(check);
         sort.sort();
         sort.display();
 
