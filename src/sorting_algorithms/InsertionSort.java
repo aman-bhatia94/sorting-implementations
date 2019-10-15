@@ -52,12 +52,4 @@ public class InsertionSort implements SortInterface {
         System.out.println(this.words.toString());
     }
 
-    public static void main(String[] args) {
-        InsertionSort sort = new InsertionSort();
-        String[] check = {"dc","b","dca","xxx","a","aa"};
-        //sort.addWordsToList(check);
-        sort.sort();
-        sort.display();
-
-    }
 }

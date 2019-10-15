@@ -46,6 +46,7 @@ public class HeapSort implements SortInterface {
         heapSort(words);
     }
 
+    //sort method
     private void heapSort(ArrayList<String> words) {
         buildMaxHeap(words); //build a max heap first
         for(int i = size - 1; i >=1; i--){
@@ -56,7 +57,7 @@ public class HeapSort implements SortInterface {
             maxHeapify(words,0);
         }
     }
-
+    //method to build a max heap(bottom up approach)
     private void buildMaxHeap(ArrayList<String> words) {
         heapSize = words.size();
         for(int i = (size - 1)/2; i >= 0; i--){
@@ -64,6 +65,7 @@ public class HeapSort implements SortInterface {
         }
     }
 
+    //method to heapify(used to set a heap  to max heap)
     private void maxHeapify(ArrayList<String> words, int i){
         int left = left(i);
         int right = right(i);
@@ -89,15 +91,5 @@ public class HeapSort implements SortInterface {
     public void display() {
         System.out.println(words.toString());
     }
-
-    public static void main(String[] args) {
-        HeapSort sort = new HeapSort();
-        String[] check = {"dc","b","dca","xxx","a","aa"};
-        //sort.addWordsToList(check);
-        sort.sort();
-        sort.display();
-
-    }
-
 
 }

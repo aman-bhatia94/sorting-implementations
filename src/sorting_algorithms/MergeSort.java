@@ -86,7 +86,7 @@ public class MergeSort implements SortInterface {
                 k++;
             }
         }
-        //System.out.println("words now"+words.toString());
+
 
     }
 
@@ -95,11 +95,4 @@ public class MergeSort implements SortInterface {
         System.out.println(words.toString());
     }
 
-    public static void main(String[] args) {
-        MergeSort sort = new MergeSort();
-        String[] check = {"dc","b","dca","xxx","a","aa"};
-       // sort.addWordsToList(check);
-        sort.sort();
-        sort.display();
-    }
 }

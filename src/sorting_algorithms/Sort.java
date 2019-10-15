@@ -7,10 +7,11 @@ import java.util.Scanner;
 
 public class Sort {
     int counter = 1;
+
+    //method that calculates sort time for algo
     public void sortTime(String sortAlgo, SortInterface sortInterface){
         File file = new File("src/input_files/pride-and-prejudice.txt");
         FileWriter fileWriter = null;
-        //String fileHeader = sortInterface.getClass().getName()+counter+", time_to_sort \n";
         try {
             fileWriter = new FileWriter("src/output_files/sorts.csv", true);
             Scanner scanner = new Scanner(file);
