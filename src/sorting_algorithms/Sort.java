@@ -36,41 +36,43 @@ public class Sort {
         }
     }
     public static void main(String[] args) {
+        //Experiments run 10 times. For simplicity i run it once, the reports however have been made by running them 10 times
+        //The results of the experiments are directly appended to the file, and not displayed on the console.
         Sort sort = new Sort();
         InsertionSort is;
         SelectionSort ss;
         MergeSort ms;
         QuickSort qs;
         HeapSort hs;
-        for(int i = 1; i <=10; i++) {
+        for(int i = 1; i <=1; i++) {
             is = new InsertionSort();
             System.out.println("insertion begin");
             sort.sortTime("insertion_sort", is);
             System.out.println("insertion end");
         }
         sort.counter = 1;
-        for(int i = 1; i <=10; i++) {
+        for(int i = 1; i <=1; i++) {
             ss = new SelectionSort();
             System.out.println("selection begin");
             sort.sortTime("selection_sort", ss);
             System.out.println("selection end");
         }
         sort.counter = 1;
-        for(int i = 1; i <=10; i++) {
+        for(int i = 1; i <=1; i++) {
             ms = new MergeSort();
             System.out.println("merge begin");
             sort.sortTime("merge_sort",ms);
             System.out.println("merge end");
         }
         sort.counter = 1;
-        for(int i = 1; i <=10; i++) {
+        for(int i = 1; i <=1; i++) {
             qs = new QuickSort();
             System.out.println("quick sort begin");
             sort.sortTime("quick_sort", qs);
             System.out.println("quick_sort end");
         }
         sort.counter = 1;
-        for(int i = 1; i <=10; i++) {
+        for(int i = 1; i <=1; i++) {
             hs = new HeapSort();
             System.out.println("heap begin");
             sort.sortTime("heap_sort", hs);
