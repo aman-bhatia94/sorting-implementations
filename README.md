@@ -5,3 +5,4 @@
 - Quicksort takes more time than merge sort but it sorts in place. The runtime for quicksort is O(nlogn) on average, it takes O(n^2) in the worst case, but this behavior is rare. Quicksort took 1268.8 milliseconds to sort.
 - HeapSort performs better than quicksort but not as fast as merge sort. Heap sort also takes O(nlogn) time to sort and sorts in place. Heap sort took 103.8 milliseconds to sort on average
 
+![alt text](/sorts_comparison.png)
